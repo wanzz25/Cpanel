@@ -57,7 +57,7 @@ async function sendTelegramMessage(chatId, message) {
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
 
-  if (username === 'isidewek' && password === 'isidewek') {
+  if (username === 'wanzz' && password === 'wanzz') {
     res.json({ success: true, user: { username: 'isidewek', role: 'admin' } });
   } else {
     res.status(401).json({ error: 'Invalid credentials' });
